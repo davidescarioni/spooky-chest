@@ -1,0 +1,17 @@
+draw_set_alpha(alphaStart)
+draw_set_color(c_black)
+draw_rectangle(0, 0, room_width, room_height, false)
+alphaStart -= .05
+draw_set_alpha(1)
+
+draw_set_alpha(alphaLevelCompleted)
+draw_set_font(fntTitle)
+draw_set_halign(fa_center)
+draw_set_valign(fa_center)
+draw_set_color(c_black)
+draw_text(camera_get_view_width(camera)/2 + 5, yLevelCompleted + 5, "Spooky Chest")
+draw_set_color(c_white)
+draw_text(camera_get_view_width(camera)/2, yLevelCompleted, "Spooky Chest")
+yLevelCompleted = lerp(yLevelCompleted, yLevelCompletedEnd, .1)
+alphaLevelCompleted = lerp(alphaLevelCompleted, .8, .025)
+draw_set_alpha(1)
