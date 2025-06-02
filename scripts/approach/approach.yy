@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"place_meeting_precise",
+  "%Name":"approach",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"place_meeting_precise",
+  "name":"approach",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

@@ -3,7 +3,7 @@ draw_set_color(c_black);
 draw_rectangle(0, 0, room_width, room_height, false)
 draw_set_font(fntCompleted)
 draw_set_halign(fa_center)
-draw_set_valign(fa_center)
+draw_set_valign(fa_middle)
 draw_set_color(c_black)
 draw_text(camera_get_view_width(camera)/2 + 5, yTextEnd + 5, "Thanks for Playing!")
 draw_set_color(c_white)

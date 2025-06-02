@@ -14,7 +14,7 @@ switch state {
 		draw_rectangle(0, 0, room_width, room_height, false)
 		draw_set_font(fntCompleted)
 		draw_set_halign(fa_center)
-		draw_set_valign(fa_center)
+		draw_set_valign(fa_middle)
 		draw_set_color(c_black)
 		draw_text(camera_get_view_width(camera)/2 + 5, yLevelCompleted + 5, "Level Completed")
 		draw_set_color(c_white)
@@ -41,19 +41,20 @@ switch state {
 
 		draw_text(10, 20, "Press ESC to return to menu")
 		draw_text(10, 50, "Press R to restart the level")
-		yTextPos = camera_get_view_y(camera) + 300
+		var y_text_pos = camera_get_view_y(camera) + 300
+		var _txt = "";
 		
 		switch (room) {
 			case rm_lv1:
 				draw_set_halign(fa_center)
-				var txt = "Use Left and Right to rotate the room"
-				draw_text(room_width / 2, yTextPos, txt);
+				_txt = "Use Left and Right to rotate the room"
+				draw_text(room_width / 2, y_text_pos, _txt);
 				break;
 				
 			case rm_lv2:
 				draw_set_halign(fa_center)
-				var txt = "You need to fall down exactly on the ghost to cath him"
-				draw_text(room_width / 2, yTextPos, txt);
+				_txt = "You need to fall down exactly on the ghost to cath him"
+				draw_text(room_width / 2, y_text_pos, _txt);
 				break;
 		}
 	break;

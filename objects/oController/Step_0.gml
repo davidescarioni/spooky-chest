@@ -13,7 +13,8 @@ switch state {
 	break;
 	
 	case gameState.rotation:
-		cameraAngle = lerp(cameraAngle, cameraAngleToBe, .25);
+		cameraAngle = lerp_offset(cameraAngle, cameraAngleToBe, .3);
+		show_debug_message(cameraAngle)
 		if (cameraAngle == cameraAngleToBe) {
 			rotation = rotationDir.idle;
 			state = gameState.movement;
