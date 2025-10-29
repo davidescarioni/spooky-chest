@@ -40,7 +40,26 @@ switch state {
 		draw_set_halign(fa_left)
 
 		draw_text(10, 20, "Press ESC to return to menu")
-		draw_text(10, 50, "Press R to restart the level")
+		//draw_text(10, 50, "Press R to restart the level")
+
+        //if !instance_exists(oRestart) {
+            //instance_create_depth(room_width / 2, room_height / 2, 10, oRestart);
+        //}
+    
+        var _mx = device_mouse_x_to_gui(0);
+        var _my = device_mouse_y_to_gui(0);
+    
+        var _restart_img_index = 0; 
+
+        if point_in_rectangle(_mx, _my, spr_restart_x_start, spr_restart_y_start, spr_restart_x_end, spr_restart_y_end) {
+            _restart_img_index = 1;
+            
+            if mouse_check_button_released(mb_left) {
+                room_restart();
+            }
+        }
+    
+        draw_sprite(sRestart, _restart_img_index, spr_restart_x_start + spr_restart_dim / 2, 10 + spr_restart_dim / 2)
 		var y_text_pos = camera_get_view_y(camera) + 300
 		var _txt = "";
 		

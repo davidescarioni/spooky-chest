@@ -25,7 +25,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.0.190",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"spooky-chest",
   "resources":[
@@ -52,6 +52,7 @@
     {"id":{"name":"oMouse","path":"objects/oMouse/oMouse.yy",},},
     {"id":{"name":"oMovable","path":"objects/oMovable/oMovable.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
+    {"id":{"name":"oRestart","path":"objects/oRestart/oRestart.yy",},},
     {"id":{"name":"oScreenShake","path":"objects/oScreenShake/oScreenShake.yy",},},
     {"id":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
     {"id":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
@@ -96,6 +97,7 @@
     {"id":{"name":"sMouse","path":"sprites/sMouse/sMouse.yy",},},
     {"id":{"name":"sNineSliceSprite","path":"sprites/sNineSliceSprite/sNineSliceSprite.yy",},},
     {"id":{"name":"sPumpkin","path":"sprites/sPumpkin/sPumpkin.yy",},},
+    {"id":{"name":"sRestart","path":"sprites/sRestart/sRestart.yy",},},
     {"id":{"name":"sWebs","path":"sprites/sWebs/sWebs.yy",},},
     {"id":{"name":"tsWebs","path":"tilesets/tsWebs/tsWebs.yy",},},
   ],
