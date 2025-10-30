@@ -94,6 +94,7 @@
     {"id":{"name":"sGhost","path":"sprites/sGhost/sGhost.yy",},},
     {"id":{"name":"sGradient","path":"sprites/sGradient/sGradient.yy",},},
     {"id":{"name":"sLock","path":"sprites/sLock/sLock.yy",},},
+    {"id":{"name":"sMenu","path":"sprites/sMenu/sMenu.yy",},},
     {"id":{"name":"sMouse","path":"sprites/sMouse/sMouse.yy",},},
     {"id":{"name":"sNineSliceSprite","path":"sprites/sNineSliceSprite/sNineSliceSprite.yy",},},
     {"id":{"name":"sPumpkin","path":"sprites/sPumpkin/sPumpkin.yy",},},

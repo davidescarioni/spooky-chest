@@ -58,6 +58,7 @@
     {"name":"sGhost","order":8,"path":"sprites/sGhost/sGhost.yy",},
     {"name":"sGradient","order":4,"path":"sprites/sGradient/sGradient.yy",},
     {"name":"sLock","order":13,"path":"sprites/sLock/sLock.yy",},
+    {"name":"sMenu","order":18,"path":"sprites/sMenu/sMenu.yy",},
     {"name":"sMouse","order":12,"path":"sprites/sMouse/sMouse.yy",},
     {"name":"sNineSliceSprite","order":11,"path":"sprites/sNineSliceSprite/sNineSliceSprite.yy",},
     {"name":"sPumpkin","order":3,"path":"sprites/sPumpkin/sPumpkin.yy",},

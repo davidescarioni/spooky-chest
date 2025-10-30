@@ -36,3 +36,8 @@ spr_restart_x_start = room_width - 76;
 spr_restart_y_start = 10;
 spr_restart_x_end = spr_restart_x_start + spr_restart_dim;
 spr_restart_y_end = 10 + spr_restart_dim;
+
+spr_menu_x_start = 76 - spr_restart_dim
+spr_menu_y_start = 10;
+spr_menu_x_end = spr_menu_x_start + spr_restart_dim;
+spr_menu_y_end = 10 + spr_restart_dim;
