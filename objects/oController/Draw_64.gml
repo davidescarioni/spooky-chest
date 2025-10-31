@@ -76,12 +76,15 @@ switch state {
         draw_sprite(sMenu, _menu_img_index, spr_menu_x_start + spr_restart_dim / 2, 10 + spr_restart_dim / 2)
 		var y_text_pos = camera_get_view_y(camera) + 300
 		var _txt = "";
+        var _txt_2 = "";
 		
 		switch (room) {
 			case rm_lv1:
 				draw_set_halign(fa_center)
-				_txt = "Use Left and Right to rotate the room"
-				draw_text(room_width / 2, y_text_pos, _txt);
+                _txt = "Use Left and Right button or click on the left and right side of the view"
+                _txt_2 = "to rotate the room"
+				draw_text(room_width / 2, y_text_pos - 24, _txt);
+				draw_text(room_width / 2, y_text_pos, _txt_2);
 				break;
 				
 			case rm_lv2:

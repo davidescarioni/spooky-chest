@@ -1,5 +1,5 @@
 {
-  "$GMOperaGXOptions":"",
+  "$GMOperaGXOptions":"v1",
   "%Name":"operagx",
   "name":"operagx",
   "option_operagx_display_cursor":false,
@@ -23,6 +23,7 @@
   "option_operagx_team_id":"426c8c47-d9de-4b35-a47c-7e082273c20a",
   "option_operagx_team_name":"Davide Scarioni",
   "option_operagx_texture_page":"2048x2048",
+  "option_operagx_transparent_background":false,
   "option_operagx_version":"1.0.0.2",
   "resourceType":"GMOperaGXOptions",
   "resourceVersion":"2.0",

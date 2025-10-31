@@ -1,7 +1,9 @@
 var _mx = device_mouse_x_to_gui(0);
 var _my = device_mouse_y_to_gui(0);
 
-if (state == gameState.idle && !point_in_rectangle(_mx, _my, spr_restart_x_start, spr_restart_y_start, spr_restart_x_end, spr_restart_y_end)) {
+if (state == gameState.idle && 
+    !point_in_rectangle(_mx, _my, spr_restart_x_start, spr_restart_y_start, spr_restart_x_end, spr_restart_y_end) && 
+    !point_in_rectangle(_mx, _my, spr_menu_x_start, spr_menu_y_start, spr_menu_x_end, spr_menu_y_end)) {
     var cam = camera
     
     // Centro della view in room coordinates
