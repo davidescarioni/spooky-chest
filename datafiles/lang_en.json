@@ -1,0 +1,14 @@
+{
+  "intro": {
+    "text": "Spooky chest, cath all the ghosts, please!"
+  },
+  "startMenu": {
+    "start": "Play",
+    "continue": "Load",
+    "options": "Options",
+    "exit": "Exit"
+  },
+  "HUD": {
+    "coins": "Coins: {0}"
+  }
+}

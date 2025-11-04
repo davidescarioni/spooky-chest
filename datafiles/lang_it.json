@@ -1,0 +1,14 @@
+{
+  "intro": {
+    "text": "Spooky chest, cattura tutti i fantasmi, ti prego!"
+  },
+  "startMenu": {
+    "start": "Nuova partita",
+    "continue": "Carica",
+    "options": "Opzioni",
+    "exit": "Esci"
+  },
+  "HUD": {
+    "coins": "Monete: {0}"
+  }
+}

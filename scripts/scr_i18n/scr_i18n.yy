@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_i18n",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_i18n",
+  "parent":{
+    "name":"i18n",
+    "path":"folders/i18n.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

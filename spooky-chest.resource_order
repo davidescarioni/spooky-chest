@@ -1,5 +1,7 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"i18n","order":1,"path":"folders/i18n.yy",},
+  ],
   "ResourceOrderSettings":[
     {"name":"fntDefault","order":1,"path":"fonts/fntDefault/fntDefault.yy",},
     {"name":"fntTitle","order":2,"path":"fonts/fntTitle/fntTitle.yy",},
@@ -42,6 +44,7 @@
     {"name":"approach","order":4,"path":"scripts/approach/approach.yy",},
     {"name":"place_meeting_precise","order":1,"path":"scripts/place_meeting_precise/place_meeting_precise.yy",},
     {"name":"save_load","order":3,"path":"scripts/save_load/save_load.yy",},
+    {"name":"scr_i18n","order":1,"path":"scripts/scr_i18n/scr_i18n.yy",},
     {"name":"ScreenShake","order":1,"path":"scripts/ScreenShake/ScreenShake.yy",},
     {"name":"SinWaves","order":2,"path":"scripts/SinWaves/SinWaves.yy",},
     {"name":"sndBoxNoise","order":1,"path":"sounds/sndBoxNoise/sndBoxNoise.yy",},
