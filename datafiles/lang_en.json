@@ -2,13 +2,16 @@
   "intro": {
     "text": "Spooky chest, cath all the ghosts, please!"
   },
-  "startMenu": {
-    "start": "Play",
-    "continue": "Load",
-    "options": "Options",
-    "exit": "Exit"
+  "levels": {
+    "completed": "Level Completed"
   },
-  "HUD": {
-    "coins": "Coins: {0}"
+  "tutorial": {
+    "move1": "Use Left and Right button or click on the left and right side of the view",
+    "move2": "to rotate the room",
+    "fall": "You need to fall down exactly on the ghost to cath him"
+  },
+  "endGame": {
+    "thanks": "Thanks for Playing!",
+    "credits": "Spooky Chest, a game made by Scario. Theme Music from SoundImage.org"
   }
 }

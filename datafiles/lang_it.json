@@ -2,13 +2,16 @@
   "intro": {
     "text": "Spooky chest, cattura tutti i fantasmi, ti prego!"
   },
-  "startMenu": {
-    "start": "Nuova partita",
-    "continue": "Carica",
-    "options": "Opzioni",
-    "exit": "Esci"
+  "levels": {
+    "completed": "Livello Completato"
   },
-  "HUD": {
-    "coins": "Monete: {0}"
+  "tutorial": {
+    "move1": "Usa le frecce destra e sinistra o clicca sulla parte sinistra e destra dello schermo",
+    "move2": "per ruotare la stanza",
+    "fall": "Devi cadere esattamente su un fantasma per catturarlo"
+  },
+  "endGame": {
+    "thanks": "Grazie per aver giocato!",
+    "credits": "Spooky Chest, un gioco di Scario. Musica scaricata da SoundImage.org"
   }
 }

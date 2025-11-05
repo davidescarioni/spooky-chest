@@ -16,9 +16,10 @@ switch state {
 		draw_set_halign(fa_center)
 		draw_set_valign(fa_middle)
 		draw_set_color(c_black)
-		draw_text(camera_get_view_width(camera)/2 + 5, yLevelCompleted + 5, "Level Completed")
+        var _lvl_completed_text = get_dictionary_value("levels.completed");
+		draw_text(camera_get_view_width(camera)/2 + 5, yLevelCompleted + 5, _lvl_completed_text)
 		draw_set_color(c_white)
-		draw_text(camera_get_view_width(camera)/2, yLevelCompleted, "Level Completed")
+		draw_text(camera_get_view_width(camera)/2, yLevelCompleted, _lvl_completed_text)
 		yLevelCompleted = lerp(yLevelCompleted, yLevelCompletedEnd, .1)
 		alphaLevelCompleted = lerp(alphaLevelCompleted, .8, .025)
 		timeToChangeRoom--
@@ -81,15 +82,15 @@ switch state {
 		switch (room) {
 			case rm_lv1:
 				draw_set_halign(fa_center)
-                _txt = "Use Left and Right button or click on the left and right side of the view"
-                _txt_2 = "to rotate the room"
+                _txt = get_dictionary_value("tutorial.move1")
+                _txt_2 = get_dictionary_value("tutorial.move2")
 				draw_text(room_width / 2, y_text_pos - 24, _txt);
 				draw_text(room_width / 2, y_text_pos, _txt_2);
 				break;
 				
 			case rm_lv2:
 				draw_set_halign(fa_center)
-				_txt = "You need to fall down exactly on the ghost to cath him"
+				_txt = get_dictionary_value("tutorial.fall")
 				draw_text(room_width / 2, y_text_pos, _txt);
 				break;
 		}
