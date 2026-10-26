@@ -1,0 +1,103 @@
+switch state {
+	case gameState.start:
+		draw_set_alpha(alphaStart)
+		draw_set_color(c_black)
+		draw_rectangle(0, 0, room_width, room_height, false)
+		alphaStart -= .05
+		if alphaStart <= .1 state = gameState.idle;
+		draw_set_alpha(1)
+	break;
+	
+	case gameState.win:
+		draw_set_alpha(alphaLevelCompleted)
+		draw_set_color(c_black);
+		draw_rectangle(0, 0, room_width, room_height, false)
+		draw_set_font(fntCompleted)
+		draw_set_halign(fa_center)
+		draw_set_valign(fa_middle)
+		draw_set_color(c_black)
+        var _lvl_completed_text = get_dictionary_value("levels.completed");
+		draw_text(camera_get_view_width(camera)/2 + 5, yLevelCompleted + 5, _lvl_completed_text)
+		draw_set_color(c_white)
+		draw_text(camera_get_view_width(camera)/2, yLevelCompleted, _lvl_completed_text)
+		yLevelCompleted = lerp(yLevelCompleted, yLevelCompletedEnd, .1)
+		alphaLevelCompleted = lerp(alphaLevelCompleted, .8, .025)
+		timeToChangeRoom--
+		draw_set_alpha(1)
+		if timeToChangeRoom <=0 {
+			alphaStart+=.1
+			draw_set_alpha(alphaStart)
+			draw_set_color(c_black)
+			draw_rectangle(0, 0, room_width, room_height, false)
+			if alphaStart >= 1 room_goto_next()
+			draw_set_alpha(1);
+		}
+	break;
+	
+	default:
+		// Other Text
+		draw_set_font(fntDefault)
+		draw_set_color(c_white)
+		draw_set_halign(fa_left)
+
+		//draw_text(10, 20, "Press ESC to return to menu")
+		//draw_text(10, 50, "Press R to restart the level")
+
+        //if !instance_exists(obj_restart) {
+            //instance_create_depth(room_width / 2, room_height / 2, 10, obj_restart);
+        //}
+    
+        var _mx = device_mouse_x_to_gui(0);
+        var _my = device_mouse_y_to_gui(0);
+    
+        // Collision with Restart Button sprite
+        var _restart_img_index = 0; 
+
+        if point_in_rectangle(_mx, _my, spr_restart_x_start, spr_restart_y_start, spr_restart_x_end, spr_restart_y_end) {
+            _restart_img_index = 1;
+            
+            if mouse_check_button_released(mb_left) {
+                room_restart();
+            }
+        }
+    
+        draw_sprite(spr_restart, _restart_img_index, spr_restart_x_start + spr_restart_dim / 2, 10 + spr_restart_dim / 2)
+    
+    
+        // Collision with Menu Button sprite
+        var _menu_img_index = 0; 
+        if point_in_rectangle(_mx, _my, spr_menu_x_start, spr_menu_y_start, spr_menu_x_end, spr_menu_y_end) {
+            _menu_img_index = 1;
+        
+            if mouse_check_button_released(mb_left) {
+                room_goto(rm_init);
+            }
+        }
+    
+        draw_sprite(sMenu, _menu_img_index, spr_menu_x_start + spr_restart_dim / 2, 10 + spr_restart_dim / 2)
+		var y_text_pos = camera_get_view_y(camera) + 300
+		var _txt = "";
+        var _txt_2 = "";
+		
+		switch (room) {
+			case rm_lv1:
+				draw_set_halign(fa_center)
+                _txt = get_dictionary_value("tutorial.move1")
+                _txt_2 = get_dictionary_value("tutorial.move2")
+				draw_text(room_width / 2, y_text_pos - 24, _txt);
+				draw_text(room_width / 2, y_text_pos, _txt_2);
+				break;
+				
+			case rm_lv2:
+				draw_set_halign(fa_center)
+				_txt = get_dictionary_value("tutorial.fall")
+				draw_text(room_width / 2, y_text_pos, _txt);
+				break;
+		}
+	break;
+}
+
+
+
+
+

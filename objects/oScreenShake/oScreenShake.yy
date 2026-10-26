@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Screenshake",
-    "path":"folders/Components/Screenshake.yy",
+    "path":"folders/components/Screenshake.yy",
   },
   "parentObjectId":null,
   "persistent":false,

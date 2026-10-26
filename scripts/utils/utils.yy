@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"utils",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"utils",
+  "parent":{
+    "name":"spooky-chest",
+    "path":"spooky-chest.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

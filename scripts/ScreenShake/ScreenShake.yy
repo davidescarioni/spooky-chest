@@ -6,7 +6,7 @@
   "name":"ScreenShake",
   "parent":{
     "name":"Screenshake",
-    "path":"folders/Components/Screenshake.yy",
+    "path":"folders/components/Screenshake.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
